@@ -8,7 +8,6 @@ import { IGetAllProductsReturn } from "@src/types/lib/product-handler";
 import { Suspense } from "react";
 
 export default async function ProductsPage({ searchParams }: IProductPage) {
-  // await Authorization(["admin", "user"]);
   const currentPage: string = searchParams?.page || "1";
   const requestForGetAllProduct: Promise<IGetAllProductsReturn> =
     getAllProducts({

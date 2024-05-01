@@ -4,3 +4,4 @@ export { SIconWithMessage } from "./s-icon-with-message";
 export { SProductCard } from "./s-product-card";
 export { RSingleProduct } from "./r-single-product";
 export { SLoading } from "./s-loading";
+export { CTableDynamic } from "./c-view-table-format";

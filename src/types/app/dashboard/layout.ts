@@ -9,6 +9,7 @@ export enum DashboardMenuItem {
   Profile = "Profile",
   Products = "Products",
   UserList = "UserList",
+  MyProjects = "My Projects",
 }
 export const menuItems: IMenuItem[] = [
   {
@@ -26,6 +27,12 @@ export const menuItems: IMenuItem[] = [
   {
     url: "/dashboard/products",
     title: DashboardMenuItem.Products,
+    isActive: false,
+    access: ["admin", "user"],
+  },
+  {
+    url: "/dashboard/projects",
+    title: DashboardMenuItem.MyProjects,
     isActive: false,
     access: ["admin", "user"],
   },

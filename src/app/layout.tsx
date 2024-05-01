@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import React from "react";
 import ReactQueryProvider from "@src/provider";
+import { AntdRegistry } from "@ant-design/nextjs-registry";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -28,7 +29,9 @@ export default function RootLayout({
         </header>
         <main className={`flex justify-center items-center mt-3`}>
           <div className={`container`}>
-            <ReactQueryProvider>{children}</ReactQueryProvider>
+            <ReactQueryProvider>
+              <AntdRegistry>{children}</AntdRegistry>
+            </ReactQueryProvider>
           </div>
         </main>
       </body>

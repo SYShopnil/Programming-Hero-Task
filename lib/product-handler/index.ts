@@ -18,7 +18,7 @@ interface IGetAllProducts {
   dataLimit: number;
 }
 
-const paginationHandler: (
+export const paginationHandler: (
   inputDataLimit: number,
   dataCollection: any,
   inputPageNo: string

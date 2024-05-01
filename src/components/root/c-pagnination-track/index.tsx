@@ -22,12 +22,12 @@ export const CPaginationTrack = ({
         const activeText = currentPage == trackIndex && " !text-[#7F4D4F]";
         return (
           <div
-            className={`${activeBg} duration-[0.2s] h-[2rem] w-[2rem]  bg-[#7F4D4F] hover:bg-[#E0E3EA] flex justify-center items-center`}
+            className={`cursor-pointer ${activeBg} duration-[0.2s] h-[2rem] w-[2rem]  bg-[#7F4D4F] hover:bg-[#E0E3EA] flex justify-center items-center`}
             key={ind}
+            onClick={() => pageHandler(trackIndex.toString())}
           >
             <span
-              className={`cursor-pointer ${activeText} duration-[0.2s]  text-white hover:text-[#7F4D4F]  font-bold text-lg`}
-              onClick={() => pageHandler(trackIndex.toString())}
+              className={` ${activeText} duration-[0.2s]  text-white hover:text-[#7F4D4F]  font-bold text-lg`}
             >
               {trackIndex}
             </span>

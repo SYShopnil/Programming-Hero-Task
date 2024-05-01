@@ -24,7 +24,7 @@ export function RTableBody({ users }: RTableHead) {
               className="w-10 h-10 mx-auto rounded-full"
             />
           </div>
-          <div className="w-1/6 text-center">{user.userType}</div>
+          {/* <div className="w-1/6 text-center">{user.userType}</div> */}
           <div className="w-1/6 text-center">{user.gender}</div>
         </div>
       ))}
