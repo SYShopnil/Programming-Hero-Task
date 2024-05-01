@@ -8,7 +8,7 @@ import { IGetAllProductsReturn } from "@src/types/lib/product-handler";
 import { Suspense } from "react";
 
 export default async function ProductsPage({ searchParams }: IProductPage) {
-  await Authorization(["admin", "user"]);
+  // await Authorization(["admin", "user"]);
   const currentPage: string = searchParams?.page || "1";
   const requestForGetAllProduct: Promise<IGetAllProductsReturn> =
     getAllProducts({
@@ -17,7 +17,7 @@ export default async function ProductsPage({ searchParams }: IProductPage) {
     });
   return (
     <section>
-      <Suspense fallback={<SLoading />}>
+      <Suspense fallback={<SLoading text={"Product page loading..."} />}>
         <SProductSection requestForGetAllProduct={requestForGetAllProduct} />
       </Suspense>
     </section>

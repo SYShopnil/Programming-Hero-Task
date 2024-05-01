@@ -1,3 +1,4 @@
+"use server";
 import { ICommonReturnData } from "@src/types/common";
 import {
   IGetAllProductsReturn,
@@ -48,7 +49,7 @@ const paginationHandler: (
   };
 };
 
-export function queryAllProductFromJson(): Promise<IProduct[]> {
+export async function queryAllProductFromJson(): Promise<IProduct[]> {
   return new Promise(async (resolve) => {
     const parseProduct: IProduct[] = JSON.parse(
       await fs.readFile(process.cwd() + "/public/db/products.db.json", "utf8")

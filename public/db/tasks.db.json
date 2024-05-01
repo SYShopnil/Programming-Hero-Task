@@ -1,0 +1,101 @@
+[
+  {
+    "taskId": "Brig-101",
+    "title": "Implement Search Bar",
+    "status": "ToDo",
+    "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "deadLine": 1712248456955,
+    "assignTo": "UK160",
+    "project": "##1"
+  },
+  {
+    "taskId": "Brig-102",
+    "title": "Implement To Do Bar",
+    "status": "ToDo",
+    "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "deadLine": 1712248456925,
+    "assignTo": "UK161",
+    "project": "##1"
+  },
+  {
+    "taskId": "Brig-103",
+    "title": "Implement Scroll Spy",
+    "status": "InProgress",
+    "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "deadLine": 1712248456955,
+    "assignTo": "UK165",
+    "project": "##1"
+  },
+  {
+    "taskId": "Brig-104",
+    "title": "Implements FAQ",
+    "status": "Done",
+    "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "deadLine": 1712248456900,
+    "assignTo": "UK170",
+    "project": "##1"
+  },
+  {
+    "taskId": "Brig-105",
+    "title": "Implement Navbar",
+    "status": "ToDo",
+    "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "deadLine": 1712248456965,
+    "assignTo": "UK163",
+    "project": "##1"
+  },
+  {
+    "taskId": "Brig-106",
+    "title": "Implement Section Bar",
+    "status": "InProgress",
+    "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "deadLine": 1712248456995,
+    "assignTo": "UK158",
+    "project": "##1"
+  },
+  {
+    "taskId": "Brig-107",
+    "title": "Refactor Search Bar",
+    "status": "ToDo",
+    "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "deadLine": 1712248456825,
+    "assignTo": "UK160",
+    "project": "##1"
+  },
+  {
+    "taskId": "Brig-108",
+    "title": "Implement Search Bar",
+    "status": "InProgress",
+    "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "deadLine": 1712248456215,
+    "assignTo": "UK161",
+    "project": "##1"
+  },
+  {
+    "taskId": "Brig-109",
+    "title": "Implement Search Bar",
+    "status": "ToDo",
+    "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "deadLine": 1712248456775,
+    "assignTo": "UK165",
+    "project": "##1"
+  },
+  {
+    "taskId": "Brig-110",
+    "title": "Implement Search",
+    "status": "Done",
+    "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "deadLine": 1712248456335,
+    "assignTo": "UK170",
+    "project": "##1"
+  },
+  {
+    "taskId": "Brig-111",
+    "title": "Refactor Nav Bar",
+    "status": "ToDo",
+    "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "deadLine": 1712248440955,
+    "assignTo": "UK163",
+    "project": "##1"
+  }
+]

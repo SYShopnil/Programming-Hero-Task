@@ -1,8 +1,8 @@
 export interface IUser {
+  userId: string;
   email: string;
   password: string;
   userName: string;
   profilePicLink: string;
-  userType: string;
   gender: string;
 }

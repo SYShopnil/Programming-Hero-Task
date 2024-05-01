@@ -1,3 +1,5 @@
+"use client";
+
 import { BtnColorSchema } from "@src/types/root";
 import { CRedirectButton } from "../button";
 import Image from "next/image";

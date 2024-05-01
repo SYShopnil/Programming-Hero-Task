@@ -1,26 +1,106 @@
 [
   {
+    "userId": "UK158",
     "email": "sadmanishopnil@gmail.com",
     "password": "123456789",
     "userName": "John Doe",
     "profilePicLink": "/assert/default-profile.png",
-    "userType": "user",
     "gender": "male"
   },
   {
+    "userId": "UK159",
     "email": "sadmanishopnil1@gmail.com",
     "password": "123456789",
     "userName": "Jane Smith",
     "profilePicLink": "/assert/default-profile.png",
-    "userType": "admin",
     "gender": "male"
   },
   {
+    "userId": "UK160",
     "email": "xyz@gmail.com",
     "password": "123456789",
     "userName": "Harry Rose",
     "profilePicLink": "/assert/default-profile.png",
-    "userType": "user",
+    "gender": "female"
+  },
+  {
+    "userId": "UK161",
+    "email": "xyyz@gmail.com",
+    "password": "123456789",
+    "userName": "Harry Lily",
+    "profilePicLink": "/assert/default-profile.png",
+    "gender": "female"
+  },
+  {
+    "userId": "UK162",
+    "email": "aaxyz@gmail.com",
+    "password": "123456789",
+    "userName": "Harry Luna",
+    "profilePicLink": "/assert/default-profile.png",
+    "gender": "female"
+  },
+  {
+    "userId": "UK163",
+    "email": "xyz@gmail.com",
+    "password": "123456789",
+    "userName": "Harry Bootom",
+    "profilePicLink": "/assert/default-profile.png",
+    "gender": "female"
+  },
+  {
+    "userId": "UK164",
+    "email": "uuxyz@gmail.com",
+    "password": "123456789",
+    "userName": "Harry Rose",
+    "profilePicLink": "/assert/default-profile.png",
+    "gender": "female"
+  },
+  {
+    "userId": "UK165",
+    "email": "xyz45@gmail.com",
+    "password": "123456789",
+    "userName": "Lily Rose",
+    "profilePicLink": "/assert/default-profile.png",
+    "gender": "female"
+  },
+  {
+    "userId": "UK166",
+    "email": "xyz78@gmail.com",
+    "password": "123456789",
+    "userName": "John Rose",
+    "profilePicLink": "/assert/default-profile.png",
+    "gender": "female"
+  },
+  {
+    "userId": "UK167",
+    "email": "xyz@gmail.com",
+    "password": "123456789",
+    "userName": "Harry Rose",
+    "profilePicLink": "/assert/default-profile.png",
+    "gender": "female"
+  },
+  {
+    "userId": "UK168",
+    "email": "xy44z@gmail.com",
+    "password": "123456789",
+    "userName": "Harry Rose",
+    "profilePicLink": "/assert/default-profile.png",
+    "gender": "female"
+  },
+  {
+    "userId": "UK169",
+    "email": "xyz855@gmail.com",
+    "password": "123456789",
+    "userName": "Harry Rose",
+    "profilePicLink": "/assert/default-profile.png",
+    "gender": "female"
+  },
+  {
+    "userId": "UK170",
+    "email": "xyz59@gmail.com",
+    "password": "123456789",
+    "userName": "Luna Rose",
+    "profilePicLink": "/assert/default-profile.png",
     "gender": "female"
   }
 ]

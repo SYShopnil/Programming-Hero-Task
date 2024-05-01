@@ -2,10 +2,10 @@
 
 import { EDataTestId } from "@src/types/common";
 import { ICPaginationTrack } from "@src/types/root/c-pagnination-track";
-import Link from "next/link";
 import React from "react";
 
 export const CPaginationTrack = ({
+  pageHandler,
   currentPage,
   totalPage,
 }: ICPaginationTrack) => {
@@ -25,16 +25,12 @@ export const CPaginationTrack = ({
             className={`${activeBg} duration-[0.2s] h-[2rem] w-[2rem]  bg-[#7F4D4F] hover:bg-[#E0E3EA] flex justify-center items-center`}
             key={ind}
           >
-            <Link
-              href={`/dashboard/products?page=${trackIndex}`}
-              legacyBehavior
+            <span
+              className={`cursor-pointer ${activeText} duration-[0.2s]  text-white hover:text-[#7F4D4F]  font-bold text-lg`}
+              onClick={() => pageHandler(trackIndex.toString())}
             >
-              <span
-                className={`cursor-pointer ${activeText} duration-[0.2s]  text-white hover:text-[#7F4D4F]  font-bold text-lg`}
-              >
-                {trackIndex}
-              </span>
-            </Link>
+              {trackIndex}
+            </span>
           </div>
         );
       })}

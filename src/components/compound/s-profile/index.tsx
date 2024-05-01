@@ -8,7 +8,7 @@ export async function SProfile() {
     payload: { loggedInUser },
   } = await getLoggedInUser();
   if (loggedInUser) {
-    const { email, gender, profilePicLink, userName, userType } = loggedInUser;
+    const { email, gender, profilePicLink, userName } = loggedInUser;
     return (
       <div
         data-testid={EDataTestId.SProfile}
@@ -28,12 +28,7 @@ export async function SProfile() {
           />
         </div>
         <div className={`space-y-1 text-center`}>
-          <SProfileDetails
-            gender={gender}
-            email={email}
-            userName={userName}
-            userType={userType}
-          />
+          <SProfileDetails gender={gender} email={email} userName={userName} />
         </div>
       </div>
     );
