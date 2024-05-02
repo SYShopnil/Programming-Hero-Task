@@ -9,6 +9,7 @@ export interface ITaskDB {
   title: string;
   status: ETaskStatus;
   desc: string;
+  deadLine: number;
   assignTo: string; //IUser (FK)
   project: string; //IProject (FK)
 }

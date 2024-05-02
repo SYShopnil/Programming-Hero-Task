@@ -1,7 +1,7 @@
 export enum BtnColorSchema {
-  SolidBgVioletTextWhite = 'SolidBgVioletTextWhite',
-  SolidBgWhiteTextGreen = 'SolidBgWhiteTextGreen',
-  SolidBgGrayTextViolet = 'SolidBgGrayTextViolet',
+  SolidBgVioletTextWhite = "SolidBgVioletTextWhite",
+  SolidBgWhiteTextGreen = "SolidBgWhiteTextGreen",
+  SolidBgGrayTextViolet = "SolidBgGrayTextViolet",
 }
 export interface IButton {
   btnText: string;
@@ -11,7 +11,8 @@ export interface IButton {
 }
 export interface INormalButton extends IButton {
   clickHandler?: (
-    e: React.MouseEvent<HTMLElement> | React.FormEvent<HTMLFormElement>
+    e: React.MouseEvent<HTMLElement> | React.FormEvent<HTMLFormElement>,
+    args?: any[]
   ) => void;
 }
 export interface IRedirectButton extends IButton {

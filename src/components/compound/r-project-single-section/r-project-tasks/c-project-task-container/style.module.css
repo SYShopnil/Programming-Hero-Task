@@ -1,0 +1,22 @@
+.container {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.arrowIcon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 8px solid black;
+  transition: transform 0.3s ease;
+}
+
+.arrowIcon.open {
+  transform: rotate(180deg);
+}

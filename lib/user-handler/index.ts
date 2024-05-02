@@ -44,6 +44,44 @@ export async function searchIndividualUserByEmail(
   });
 }
 
+export async function searchIndividualUserById(
+  userId: string
+): Promise<ISearchIndividualUserByEmailReturn> {
+  return new Promise(async (resolve) => {
+    const getAllUserFromJsonDB = await getAllUsers();
+    if (getAllUserFromJsonDB) {
+      const getUserQueryById = getAllUserFromJsonDB.find((user) => {
+        return user.userId == userId;
+      });
+      if (getUserQueryById) {
+        resolve({
+          message: "",
+          status: 202,
+          payload: {
+            user: getUserQueryById,
+          },
+        });
+      } else {
+        resolve({
+          message: "",
+          status: 404,
+          payload: {
+            user: null,
+          },
+        });
+      }
+    } else {
+      resolve({
+        message: "",
+        status: 404,
+        payload: {
+          user: null,
+        },
+      });
+    }
+  });
+}
+
 export async function getLoggedInUser(): Promise<IGetLoggedInUserResponse> {
   try {
     const cookiesStore = cookies();

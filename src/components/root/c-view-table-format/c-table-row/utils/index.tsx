@@ -6,7 +6,11 @@ export const fieldHandler = (field: IField) => {
   switch (field.type) {
     case EFieldType.LABEL: {
       if ("label" in field.payload) {
-        return <p>{field.payload.label}</p>;
+        return (
+          <p className={`${field.payload.isLineClamp && "line-clamp-2"}`}>
+            {field.payload.label}
+          </p>
+        );
       }
     }
     case EFieldType.BUTTON_CTA: {

@@ -12,6 +12,7 @@ export interface IPayloadCommon {
 }
 export interface IPayloadTypeOne extends IPayloadCommon {
   label: string;
+  isLineClamp?: boolean;
 }
 export interface IPayloadTypeTwo extends INormalButton {}
 export interface IPayloadTypeFour extends IRedirectButton {}

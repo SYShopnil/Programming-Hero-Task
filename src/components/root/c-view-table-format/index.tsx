@@ -15,14 +15,24 @@ export const CTableDynamic = ({ headers, rows }: ICViewTableFormat) => {
       {headers.length && (
         <>
           <CTableHead
-            elementDistribution={100 / headers.length}
+            elementDistribution={Math.floor(100 / headers.length)}
             headPayload={headers}
           />
 
-          <CTableRow
-            elementDistribution={100 / headers.length}
-            rowPayloads={rows}
-          />
+          <>
+            {rows.length ? (
+              <CTableRow
+                elementDistribution={Math.floor(100 / headers.length)}
+                rowPayloads={rows}
+              />
+            ) : (
+              <div className={`p-3 bg-[#E0E3EA]`}>
+                <p className={`text-center text-[#7F4D4F] font-semibold`}>
+                  No Data Found
+                </p>
+              </div>
+            )}
+          </>
         </>
       )}
     </div>

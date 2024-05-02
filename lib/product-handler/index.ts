@@ -29,10 +29,8 @@ export const paginationHandler: (
 ) => {
   //if data limit has given from body then that will be apply otherwise global default data limit will b apply
   const limitData: number = inputDataLimit || 5;
-
   //get all data count
   const totalData: number = dataCollection.length;
-
   //if page number has given from body then that will be apply otherwise global default page number will b apply
   const pageNo: number = +inputPageNo ? +inputPageNo : 1;
 
@@ -41,7 +39,6 @@ export const paginationHandler: (
 
   //total this amount of page we need
   const totalPage: number = Math.ceil(totalData / limitData);
-
   return {
     dataLimit: limitData,
     skipData,
@@ -84,7 +81,7 @@ export async function getAllProducts({
       getAllProduct,
       currentPage
     );
-
+    console.log({ dataLimit, skipData, totalPage });
     const getProductsAfterApplyingSkipAndLimitLogic: IProduct[] =
       getPaginationProductByApplyingSkipLimitData(
         getAllProduct,

@@ -12,6 +12,8 @@ export const CLoginFormWithSubmit = () => {
     password: "",
   });
   const [isLoading, setIsLoading] = useState(false);
+  const [isValidEmail, setIsValidEmail] = useState<boolean>(true);
+  const [isValidPassword, setIsValidPassword] = useState<boolean>(true);
   const [payload, setPayload] = useState("");
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>): void => {
     const { name, value } = e.target;
@@ -20,13 +22,56 @@ export const CLoginFormWithSubmit = () => {
       [name]: value,
     }));
   };
+  const formValidation = (formData: FormData) => {
+    let isAllValid = true;
+    const allFormKey = Object.keys(formData);
+    allFormKey.forEach((key) => {
+      switch (key) {
+        case "email": {
+          const isValid: boolean =
+            /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(
+              formData[key]
+            );
+          if (isValid) {
+            isAllValid = true;
+          } else {
+            isAllValid = false;
+            setIsValidEmail(false);
+            setPayload("Email or password validation error");
+          }
+          break;
+        }
+        case "password": {
+          const isValidPassword = /^.{8,}$/.test(formData[key]);
+          if (isValidPassword) {
+            isAllValid = true;
+          } else {
+            isAllValid = false;
+            setIsValidPassword(false);
+            setPayload("Email or password validation error");
+          }
+          break;
+        }
+      }
+    });
+
+    return isAllValid;
+  };
 
   const formSubmitHandler = async (): Promise<void> => {
-    setIsLoading(true);
-    try {
-      await LoginController(formData);
-    } catch (err) {
-      setPayload("Somethings went wrong");
+    const isAllValid = formValidation(formData);
+    if (isAllValid) {
+      setIsValidEmail(true);
+      setIsValidPassword(true);
+      setPayload("");
+      setIsLoading(true);
+      try {
+        await LoginController(formData);
+      } catch (err) {
+        setPayload("Somethings went wrong");
+      }
+    } else {
+      setPayload("Form Validation error");
     }
   };
   return (
@@ -47,6 +92,7 @@ export const CLoginFormWithSubmit = () => {
             value={formData.email}
             onChange={handleChange}
             className="w-full border rounded px-3 py-2 mt-1 focus:outline-none focus:ring focus:border-blue-300"
+            style={!isValidEmail ? { borderColor: "#F20B0B" } : {}}
             required
           />
         </div>
@@ -62,6 +108,7 @@ export const CLoginFormWithSubmit = () => {
             onChange={handleChange}
             className="w-full border rounded px-3 py-2 mt-1 focus:outline-none focus:ring focus:border-blue-300"
             required
+            style={!isValidPassword ? { borderColor: "#F20B0B" } : {}}
           />
         </div>
 
@@ -71,7 +118,7 @@ export const CLoginFormWithSubmit = () => {
           isArrow={false}
           clickHandler={formSubmitHandler}
         />
-        <span className={`text-bold `}>{payload}</span>
+        <span className={`text-bold text-[#7F4D4F] `}>{payload}</span>
       </form>
     </div>
   );

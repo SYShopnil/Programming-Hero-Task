@@ -1,7 +1,7 @@
 "use server";
 
 import { promises as fs } from "fs";
-import { getLoggedInUser } from "../user-handler";
+import { getLoggedInUser, searchIndividualUserById } from "../user-handler";
 import { IProjectDB } from "@src/types/db/projects";
 import { ICommonReturnData } from "@src/types/common";
 import { revalidatePath } from "next/cache";
@@ -11,6 +11,7 @@ import {
   IModifiedProjectDB,
 } from "@src/types/lib/project-handler";
 import { paginationHandler } from "../product-handler";
+import { IUser } from "@src/types/db/user";
 
 const databaseLocation = process.cwd() + "/public/db";
 const projectDataLimit: number = 4;
@@ -136,5 +137,57 @@ export async function getOwnProject(
       revalidatePath(redirectLink);
       redirect(redirectLink);
     }
+  }
+}
+
+interface IGetIndividualProjectByProjectID {
+  projectId: string;
+}
+
+interface IGetAllTeamMemberByProjectId
+  extends Pick<IGetIndividualProjectByProjectID, "projectId"> {}
+
+async function getIndividualProjectByProjectID({
+  projectId,
+}: IGetIndividualProjectByProjectID) {
+  const getProjects: IProjectDB[] = JSON.parse(
+    await fs.readFile(`${databaseLocation}/projects.db.json`, "utf8")
+  );
+  const getProject: IProjectDB[] = getProjects.filter(
+    (project) => project.projectId == projectId
+  );
+  return getProject[0];
+}
+
+export async function getAllTeamMemberByProjectId({
+  projectId,
+}: IGetAllTeamMemberByProjectId) {
+  try {
+    const getProject = await getIndividualProjectByProjectID({ projectId });
+    if (getProject) {
+      const { teamMembers } = getProject;
+
+      const getTeamMembers = teamMembers.map(async (member, ind) => {
+        return await searchIndividualUserById(member);
+      });
+      const myProjectTeamMembers: IUser[] = [];
+      await Promise.all(getTeamMembers)
+        .then((members) => {
+          members.map((member) => {
+            member.payload.user &&
+              myProjectTeamMembers.push(member.payload.user);
+          });
+        })
+        .catch((error) => {
+          console.error("Error occurred:", error);
+          return null;
+        });
+      return myProjectTeamMembers;
+    } else {
+      return null;
+    }
+  } catch (err) {
+    console.log(err);
+    return null;
   }
 }

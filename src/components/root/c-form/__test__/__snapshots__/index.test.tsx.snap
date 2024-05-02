@@ -1,0 +1,125 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`When Form  has rendered Expect it renders successfully 1`] = `
+<form
+  class="form grid gap-4 lg:grid-cols-2 p-3"
+  data-testid="CForm"
+>
+  <div
+    class="mb-[.5rem] md:mb-[.75rem] col-start-1 col-end-3"
+  >
+    <h3
+      class="text-center text-[1.75rem] font-medium leading-[1.3] md:text-[3rem] md:font-bold md:leading-[1.1] capitalize text-secondary"
+    >
+      Test Form
+    </h3>
+  </div>
+  <div
+    class="col-start-1 col-end-3"
+  >
+    <div>
+      <label
+        class="text-base font-medium text-blackLight"
+        for="name"
+      >
+        Food Name
+      </label>
+      <input
+        autocomplete="Off"
+        class="border-[1px] border-solid block w-full focus:outline-0 focus:shadow-none focus-visible:outline-0  placeholder:capitalize placeholder:text-blackLight text-blackLight bg-gray text-base rounded-lg p-[1rem_1.5rem] border-transparent"
+        data-testid="name"
+        id="name"
+        name="name"
+        placeholder="Give Name*"
+        type="input"
+        value=""
+      />
+    </div>
+  </div>
+  <div
+    class="col-start-1 col-end-3"
+  >
+    <div>
+      <label
+        class="text-base font-medium text-blackLight"
+        for="price"
+      >
+        Food Price
+      </label>
+      <input
+        autocomplete="Off"
+        class="border-[1px] border-solid block w-full focus:outline-0 focus:shadow-none focus-visible:outline-0  placeholder:capitalize placeholder:text-blackLight text-blackLight bg-gray text-base rounded-lg p-[1rem_1.5rem] border-transparent"
+        data-testid="price"
+        id="price"
+        name="price"
+        placeholder="Give Price*"
+        type="input"
+        value=""
+      />
+    </div>
+  </div>
+  <div
+    class="col-start-1 col-end-3"
+  >
+    <div>
+      <label
+        class="text-base font-medium text-blackLight"
+        for="desc"
+      >
+        Description
+      </label>
+      <textarea
+        autocomplete="Off"
+        class="border-[1px] border-solid block w-full focus:outline-0 focus:shadow-none focus-visible:outline-0  placeholder:capitalize placeholder:text-blackLight text-blackLight bg-gray text-base rounded-lg p-[1rem_1.5rem] border-transparent resize-none min-h-[130px]"
+        data-testid="desc"
+        id="desc"
+        name="desc"
+        placeholder="Give Description*"
+      />
+    </div>
+  </div>
+  <div
+    class="col-start-1 col-end-3"
+  >
+    <div>
+      <label
+        class="text-base font-medium text-blackLight"
+        for="image"
+      >
+        Upload Food Picture
+      </label>
+      <div>
+        <div
+          class="mb-3"
+        >
+          <input
+            class="form-control"
+            placeholder=""
+            required=""
+            type="file"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="col-start-1 col-end-3"
+  >
+    <span
+      class="cursor-pointer"
+    >
+      <span
+        class="flex justify-center items-center  "
+      >
+        <span
+          class="text-base md:text-base_2  flex justify-center items-center px-[1rem] py-[0.5rem] rounded-[0.563rem] w-[100%] h-[100%] bg-[#EDEDED] hover:bg-[#7A67EE]  duration-[0.5s] text-[#7A67EE] hover:text-[#EDEDED]   border-[0.063rem] hover:border-[#EDEDED] border-[#7A67EE]   "
+        >
+          <span>
+            Demo One
+          </span>
+        </span>
+      </span>
+    </span>
+  </div>
+</form>
+`;
